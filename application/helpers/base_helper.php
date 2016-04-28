@@ -79,7 +79,7 @@ function httpGet($url, $param = array(), $header = array()) {
 	
 	//$ch = curl_init($url.$paramString);
 	$ch = curl_init();
-	curl_setopt($ch, CURLOPT_URL, $url.$paramString);
+	curl_setopt($ch, CURLOPT_URL, urlencode($url.$paramString));
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	curl_setopt($ch, CURLOPT_BINARYTRANSFER, true);
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
