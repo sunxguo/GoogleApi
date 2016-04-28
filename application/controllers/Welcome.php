@@ -32,6 +32,13 @@ class Welcome extends CI_Controller {
 		$result=httpGet($url, $param);
 		print_r($result);
 	}
+	public function test()
+	{
+		// $this->load->view('welcome_message');
+		$url="https://google.com";
+		$result=httpGet($url);
+		print_r($result);
+	}
 	public function index(){
 		$requestUrl = 'https://maps.googleapis.com/maps/api/geocode/json';
 		$ch = curl_init();
