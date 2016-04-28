@@ -33,9 +33,9 @@ class Welcome extends CI_Controller {
 		print_r($result);
 	}
 	public function index(){
-		$requestUrl = 'google.com';
+		$requestUrl = 'https://maps.googleapis.com/maps/api/geocode/json';
 		$ch = curl_init();
-		$timeout = 5;
+		$timeout = 50;
 		curl_setopt($ch, CURLOPT_URL, $requestUrl);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
