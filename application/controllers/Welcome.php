@@ -29,7 +29,7 @@ class Welcome extends CI_Controller {
 			'address'=>"1600+Amphitheatre+Parkway,+Mountain+View,+CA",
 			'key'=>"AIzaSyBSA5oOEb1bJ8zmlXG0ZLzLMNoocr-bvcQ"
 			);
-		$result=httpGet($url, $param);
+		$result=httpGet(urlencode($url), $param);
 		print_r($result);
 	}
 	public function index(){
