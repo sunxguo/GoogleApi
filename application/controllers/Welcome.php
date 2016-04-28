@@ -36,16 +36,16 @@ class Welcome extends CI_Controller {
 	{
 		// $this->load->view('welcome_message');
 		$address=isset($_GET['address'])?$_GET['address']:'';
-		$language=isset($_GET['language'])?$_GET['language']:'';
-		$url="https://maps.googleapis.com/maps/api/geocode/json?address=".$address."&key=AIzaSyBSA5oOEb1bJ8zmlXG0ZLzLMNoocr-bvcQ".$language;
+		$url_language=isset($_GET['language'])?'&language='.$_GET['language']:'';
+		$url="https://maps.googleapis.com/maps/api/geocode/json?address=".$address."&key=AIzaSyBSA5oOEb1bJ8zmlXG0ZLzLMNoocr-bvcQ".$url_language;
 		$result=httpGet($url);
 		print_r($result);
 	}
 	public function toAddress(){
 		// https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=YOUR_API_KEY
 		$latlng=isset($_GET['latlng'])?$_GET['latlng']:'';
-		$language=isset($_GET['language'])?$_GET['language']:'';
-		$url="https://maps.googleapis.com/maps/api/geocode/json?latlng=".$latlng."&key=AIzaSyBSA5oOEb1bJ8zmlXG0ZLzLMNoocr-bvcQ".$language;
+		$url_language=isset($_GET['language'])?'&language='.$_GET['language']:'';
+		$url="https://maps.googleapis.com/maps/api/geocode/json?latlng=".$latlng."&key=AIzaSyBSA5oOEb1bJ8zmlXG0ZLzLMNoocr-bvcQ".$url_language;
 		$result=httpGet($url);
 		print_r($result);
 	}
