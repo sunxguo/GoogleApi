@@ -35,7 +35,7 @@ class Welcome extends CI_Controller {
 	public function test()
 	{
 		// $this->load->view('welcome_message');
-		$url="http://platform.fengdukeji.com/api/essay?essayid=284";
+		$url="https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyBSA5oOEb1bJ8zmlXG0ZLzLMNoocr-bvcQ";
 		$result=httpGet($url);
 		print_r($result);
 	}
