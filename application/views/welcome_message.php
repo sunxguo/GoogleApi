@@ -74,7 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<p>地址获取经纬度等信息:</p>
 		<code>
 			<a href="http://googleapi.fengdukeji.com/welcome/tolatlng?address=尚领世家&language=zh-CN">
-				http://googleapi.fengdukeji.com/welcome/tolatlng?address=尚领世家&language=zh-CN
+				http://googleapi.fengdukeji.com/api/tolatlng?address=尚领世家&language=zh-CN
 			</a>
 			不设置language则默认英文
 		</code>
