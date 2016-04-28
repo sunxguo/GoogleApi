@@ -50,6 +50,6 @@ class Welcome extends CI_Controller {
 		print_r($result);
 	}
 	public function index(){
-		
+		$this->load->view('welcome_message');
 	}
 }
