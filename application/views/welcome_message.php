@@ -68,7 +68,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-	<h1>谷歌地图Api文档</h1>
+	<h1>谷歌地图Api简介</h1>
 
 	<div id="body">
 		<p>地址获取经纬度等信息:</p>
@@ -76,12 +76,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<a href="http://googleapi.fengdukeji.com/welcome/tolatlng?address=尚领世家&language=zh-CN">
 				http://googleapi.fengdukeji.com/welcome/tolatlng?address=尚领世家&language=zh-CN
 			</a>
+			不设置language则默认英文
 		</code>
 		<p>经纬度获取地址等信息:</p>
 		<code>
 			<a href="http://googleapi.fengdukeji.com/api/toaddress?latlng=37.8245497,112.5539829&language=zh-CN">
 				http://googleapi.fengdukeji.com/api/toaddress?latlng=37.8245497,112.5539829&language=zh-CN
 			</a>
+			不设置language则默认英文
 		</code>
 		<p>支持的语言:</p>
 		<code>
