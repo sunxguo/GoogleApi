@@ -45,7 +45,7 @@ class Welcome extends CI_Controller {
 		// https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=YOUR_API_KEY
 		$latlng=isset($_GET['latlng'])?$_GET['latlng']:'';
 		$language=isset($_GET['language'])?$_GET['language']:'';
-		$url="https://maps.googleapis.com/maps/api/geocode/json?latlng=".$latlng."&key=AIzaSyBSA5oOEb1bJ8zmlXG0ZLzLMNoocr-bvcQ"..$language;
+		$url="https://maps.googleapis.com/maps/api/geocode/json?latlng=".$latlng."&key=AIzaSyBSA5oOEb1bJ8zmlXG0ZLzLMNoocr-bvcQ".$language;
 		$result=httpGet($url);
 		print_r($result);
 	}
