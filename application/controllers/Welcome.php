@@ -35,7 +35,7 @@ class Welcome extends CI_Controller {
 	public function test()
 	{
 		// $this->load->view('welcome_message');
-		$url="https://google.com";
+		$url="http://platform.fengdukeji.com/api/essay?essayid=284";
 		$result=httpGet($url);
 		print_r($result);
 	}
