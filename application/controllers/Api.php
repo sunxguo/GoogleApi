@@ -50,6 +50,8 @@ class Api extends CI_Controller {
 		print_r($result);
 	}
 	public function index(){
-		
+		$url="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSA5oOEb1bJ8zmlXG0ZLzLMNoocr-bvcQ&signed_in=true&callback=initMap"
+		$result=httpGet($url);
+		echo $result;
 	}
 }
